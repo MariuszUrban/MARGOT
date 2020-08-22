@@ -1,0 +1,30 @@
+@import '../utils/all';
+
+.headerWrap{
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    background-color: $greyBlueGreen;
+    font-family: $font;
+   
+}
+
+.NTwrap{
+    display: inherit;
+    @include font-size(0.85)
+}
+
+.Lwrap{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top:25px;
+}
+
+.Nwrap{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}

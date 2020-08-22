@@ -1,0 +1,16 @@
+.navWrap{
+    display: flex;
+    width: 100%;
+}
+
+.navListWrap{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 35px 15px 15px;
+    li{
+        width: 110px;
+    }
+}
