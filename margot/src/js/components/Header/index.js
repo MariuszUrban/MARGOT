@@ -10,11 +10,11 @@ export default class index extends Component {
   render() {
     return (
       <div className="headerWrap col-lg-12">
-        <div className=" NTwrap col-lg-5">
+        <div className=" NTwrap col-lg-4">
           <Name />
           <Title />
         </div>
-        <div className="Lwrap col-lg-2">
+        <div className="Lwrap col-lg-3">
           <Logo />
         </div>
         <div className="Nwrap col-lg-5">
