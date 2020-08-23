@@ -3,17 +3,18 @@ import { PropTypes } from "prop-types";
 import { LANG_NAMES } from "../../../languages/translations";
 
 export default class LangSwitch extends Component {
+
+
+  
   render() {
     return (
       <div className="langWrap">
         {LANG_NAMES.map((language, i) => (
           <button
-            style={{
-              fontWeight: this.props.locale === language.locale ? "bold" : "",
-            }}
+            key={i}
             onClick={() => this.props.setLanguage(language.locale)}
           >
-            <spaan>{language.name}</spaan>
+            <span>{language.name}</span>
           </button>
         ))}
       </div>
@@ -22,6 +23,6 @@ export default class LangSwitch extends Component {
 }
 
 LangSwitch.propTypes = {
-    locale: PropTypes.string.isRequired,
-    setLanguage: React.PropTypes.func,
-  };
+  locale: PropTypes.string.isRequired,
+  setLanguage: PropTypes.func,
+};
