@@ -1,0 +1,39 @@
+@import '../utils/all';
+
+.logoCommercialWrap{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100%;
+    margin: 0px 0px 0 35px;
+}
+
+.logoCommercialHeader{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    h1{
+        font-weight: bold;
+        @include font-size(0.7);
+    }
+}
+
+.logoCommercialLogo{
+    display: flex;
+    width: 150px;
+    margin-top: 5px;
+}
+
+.logoPNG{
+    width: 45px;
+    margin-right: 13px;
+}
+
+.companyName{
+     justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 7px;
+    h1{
+        @include font-size(1.2)
+    }
+}

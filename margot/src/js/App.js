@@ -1,5 +1,7 @@
 import React from "react";
 import Header from "./components/Header/index";
+import Footer from "./components/Footer/index";
+
 import "../sass/_app.scss";
 
 function App() {
@@ -8,9 +10,12 @@ function App() {
       <section id='header'>
         <Header />
       </section>
-      <section>
+      <section id='containers'>
         
       </section>
+      <section id='footer'>
+          <Footer />
+        </section>
     </div>
   );
 }

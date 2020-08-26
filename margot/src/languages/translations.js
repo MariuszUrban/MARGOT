@@ -7,14 +7,14 @@ export const TRANSLATIONS = {
     contact: 'Contact',
   },
   pl_PL: {
-    title: 'Wsparcie osób starszych',
+    title: 'Wsparcie seniora',
     main: 'Strona główna',
     about: 'O mnie',
     experience: 'Doświadczenie',
     contact: 'Kontakt',
   },
   de_DE: {
-    title: 'Hauspflege',
+    title: 'Pflegekraft',
     main: 'Haputseite',
     about: 'Über',
     experience: 'Erfahrung',
@@ -23,7 +23,7 @@ export const TRANSLATIONS = {
 }
 
 export const LANG_NAMES = [
-    { locale: 'pl_PL', name: 'PL' },
-    { locale: 'en_US', name: 'US' },
-    { locale: 'de_DE', name: 'DE' },
+    { locale: 'pl_PL', name: 'PL', },
+    { locale: 'en_US', name: 'ENG',  },
+    { locale: 'de_DE', name: 'DE', },
   ]

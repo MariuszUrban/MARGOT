@@ -1,0 +1,20 @@
+@import '../utils/all';
+
+.footerWrap{
+    display: block;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    background-color: $greyBlueGreen;
+    font-family: $font;
+}
+
+.footerInfoWrap {
+    height:100%;
+    display: flex;
+}
+
+.copyrightsWrap{
+    height: 25%;
+    background-color: $liveGreenDarker;
+}

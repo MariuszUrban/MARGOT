@@ -1,0 +1,83 @@
+@import '../utils/all';
+
+.contactWrap{
+    display: flex;
+    height: 100%;
+
+}
+
+.contactText{
+    margin-left: 35px;
+    height:100%;
+    display: inline-flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.contactHeader{
+    margin-top: 15px;
+    h1{
+        font-weight: bold;
+        @include font-size(0.9);
+    }
+}
+
+.contactParagraph{
+    margin-top: 5px;
+    p, span{
+        font-weight: 200;
+        @include font-size(0.85);
+    }
+}
+
+.contactForm{
+    margin-top: 15px;
+    
+}
+
+.contactFlex{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.formInputs{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;   
+     input{
+        width: 200px;
+        border: none;
+        background-color: $greyBlueGreen;
+        border-bottom: 1px solid black;        
+        outline: none;
+    }
+}
+
+.formButton{
+    display: flex;
+    width: 220px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.talkButton{
+    @include font-size(1);
+    font-weight: 600;
+    background-color: $greyBlueGreen;
+    border: 1px solid transparent;
+    width: 160px;
+    height: 40px;
+    justify-content: center;
+    align-content: center;
+    outline: none;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.talkButton:hover{
+    border: 1px solid black;
+    border-radius: 25px;
+ 
+}
