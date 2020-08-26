@@ -12,15 +12,15 @@ font-family: sans-serif;
 }
 
 #header{
-    height: 200px;
+    height: 130px;
 }
 
 #containers{
-    height: 85vh;
+    height: calc(100vh - 260px);
 }
 
 #footer{
-    height: 15vh;
+    height: 130px;
     background-color: lightblue
 }
   

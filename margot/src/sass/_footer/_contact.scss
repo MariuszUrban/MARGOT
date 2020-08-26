@@ -7,7 +7,6 @@
 }
 
 .contactText{
-    margin-left: 35px;
     height:100%;
     display: inline-flex;
     flex-direction: column;
@@ -63,7 +62,7 @@
 }
 
 .talkButton{
-    @include font-size(1);
+    @include font-size(0.8);
     font-weight: 600;
     background-color: $greyBlueGreen;
     border: 1px solid transparent;

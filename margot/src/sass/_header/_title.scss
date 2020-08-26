@@ -5,7 +5,7 @@
     align-items: center;
     h1{
         text-align: initial;
-        width:200px;
+        width:100%;
         font-weight: 200;
     }
 }
@@ -15,4 +15,11 @@
     align-items: center;
     height: 40px;
     
+ }
+
+ .logoWrap{
+     height: 100%;
+     display: flex;
+     align-items: center;
+     margin: -10px 0px 0 15px;
  }
