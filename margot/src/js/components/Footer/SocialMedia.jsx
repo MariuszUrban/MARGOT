@@ -8,7 +8,7 @@ export default function SocialMedia() {
         <h1>Znajdziesz mnie również na </h1>
       </div>
       <div className='linkedWrap'>
-        <a href='https://www.linkedin.com/in/ma%C5%82gorzata-wybra%C5%84ska-87a659174/?originalSubdomain=de' target="_blank">
+        <a href='https://www.linkedin.com/in/ma%C5%82gorzata-wybra%C5%84ska-87a659174/?originalSubdomain=de' target="_blank" rel="noopener noreferrer">
          <svg  
         className='socialLinkedIn'
         viewBox="0 0 24 24">
