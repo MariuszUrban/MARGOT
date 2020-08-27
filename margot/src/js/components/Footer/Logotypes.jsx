@@ -1,11 +1,11 @@
 import React from "react";
-import "../../../sass/_footer/_logo.scss";
+import "../../../sass/_footer/_logotypes.scss";
 
 export default function Logotypes() {
   return (
     <div className="logoCommercialWrap">
       <div className="logoCommercialHeader">
-        <h1>Aktualnie współpracuje z :</h1>
+        <h1>Aktualnie współpracuje z</h1>
       </div>
       <div className="logoCommercialLogo">
         <div className="logoPNGWrap">

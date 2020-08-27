@@ -1,0 +1,24 @@
+@import '../../utils/all';
+
+.contactText{
+    height:80%;
+    display: inline-flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top:25px;
+}
+
+.contactHeader{
+    h1{
+        font-weight: bold;
+        @include font-size(0.7);
+    }
+}
+
+.contactParagraph{
+    margin-top: 10px;
+    p, span{
+        font-weight: 300;
+        @include font-size(0.67);
+    }
+}

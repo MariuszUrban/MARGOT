@@ -1,11 +1,14 @@
+@import '../utils/all';
+
 .titleWrap{
-    margin: 15px 0 15px 0;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin-left: 10px;
     h1{
+        @include font-size(1);
         text-align: initial;
-        width:100%;
+        width: fit-content;
         font-weight: 200;
     }
 }

@@ -3,10 +3,10 @@
 .nameWrap{
     display: flex;
     align-items: center;
-    margin: 15px 15px 15px 35px;
-
     h1{
-        width:200px;
+        width: fit-content;
+        @include font-size(1);
         font-weight: 500;
+        text-align: end;
     }
 }

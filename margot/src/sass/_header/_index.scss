@@ -1,30 +1,37 @@
 @import '../utils/all';
 
 .headerWrap{
+    width: 100%;
     height: 130px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-content: center;
     text-align: center;
     background-color: $greyBlueGreen;
     font-family: $font;
-   
 }
 
+.row{
+   width: 45px;
+}
+
+
 .NTwrap{
-    display: inherit;
+    width: calc(100% - 450px);
+    display: flex;
+    justify-content: flex-start;
     @include font-size(0.85)
+}
+
+.Nwrap{
+    width: calc(100% - 450px);
+    display: flex;
+    justify-content:center;
 }
 
 .Lwrap{
     display: flex;
     justify-content: center;
-    align-content: center;
-    margin-top:25px;
-}
-
-.Nwrap{
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
+    width: 150px;
+    @include font-size(0.65)
 }

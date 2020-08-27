@@ -1,5 +1,12 @@
 @import '../utils/all';
 
+.langWrap{
+    width: inherit;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
 .langSwitchBTN{
     border: none;
     background-color: inherit;
