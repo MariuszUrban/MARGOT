@@ -1,19 +1,11 @@
-@import './_header/index';
-
-* {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-}
-
-html, body {
-height: 100vh;
-font-family: sans-serif;
+.App{
+    height: 100vh;
+    overflow: hidden;
 }
 
 #header{
     height: 130px;
-    width: 100%;
+    width: 100vw;
 }
 
 #containers{
@@ -22,5 +14,7 @@ font-family: sans-serif;
 
 #footer{
     height: 130px;
+    width: 100vw;
+
 }
   

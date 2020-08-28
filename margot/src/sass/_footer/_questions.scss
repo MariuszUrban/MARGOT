@@ -1,0 +1,56 @@
+@import '../../sass/utils/all';
+
+.general{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header{
+    margin-top: 25px;
+    h1{
+        font-weight: bold;
+        @include font-size(0.7);
+    }
+}
+
+.content{
+    margin: 10px 0 0 0;
+    display: flex;
+}
+
+.questionWrap{
+    height: 40px;
+}
+
+.logo{
+    height: 35px;
+}
+
+.btnWrap{
+
+
+}
+
+.btn{
+    @include font-size(0.7);
+    font-weight: 600;
+    background-color: $greyBlueGreen;
+    width: 160px;
+    height: 40px;
+    justify-content: center;
+    align-content: center;
+    outline: none;
+    cursor: pointer;
+    transition: 0.7s;
+    border-style: 5px  black;
+    border-bottom-right-radius: 10px 10px;
+    border-top-right-radius: 10px 10px;
+    border-left: none;
+    margin-left: 5px;
+    span{
+        font-weight: 200;
+    }
+}

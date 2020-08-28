@@ -4,9 +4,11 @@ import "../../../sass/_footer/_logotypes.scss";
 export default function Logotypes() {
   return (
     <div className="logoCommercialWrap">
+    
       <div className="logoCommercialHeader">
         <h1>Aktualnie współpracuje z</h1>
       </div>
+      
       <div className="logoCommercialLogo">
         <div className="logoPNGWrap">
           <img
@@ -16,6 +18,8 @@ export default function Logotypes() {
             border="0"
           />
         </div>
+
+        
         <div className='companyName'>
             <h1>
                 ATERIMA

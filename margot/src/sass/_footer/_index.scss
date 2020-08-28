@@ -2,13 +2,24 @@
 
 .footerWrap{
     height: 130px;
-    display: block;
-    justify-content: center;
+    display: flex;
+    justify-content: space-evenly;
     align-content: center;
     text-align: center;
     background-color: $greyBlueGreen;
     font-family: $font;
 }
+
+.spaceFooter{
+    min-width: 45px;
+ }
+
+ .LWrap{
+    width: calc(100vw - 180px);
+     height: 100%;
+     display: flex;
+     justify-content: center;
+ }
 
 .footerInfoWrap {
     height:100%;

@@ -1,7 +1,7 @@
 import { SET_LANGUAGE } from './generalConstants';
 
 export const initialState = {
-    locale: 'en_US', // default locale
+    locale: 'pl_PL', // default locale
   };
 
   // Reducer

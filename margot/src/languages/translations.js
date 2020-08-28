@@ -5,6 +5,7 @@ export const TRANSLATIONS = {
     about: 'About',
     experience: 'Experience',
     contact: 'Contact',
+    name: 'Name',
   },
   pl_PL: {
     title: 'Wsparcie seniora',
@@ -12,6 +13,8 @@ export const TRANSLATIONS = {
     about: 'O mnie',
     experience: 'Doświadczenie',
     contact: 'Kontakt',
+    name: 'Imię',
+
   },
   de_DE: {
     title: 'Pflegekraft',
@@ -19,6 +22,7 @@ export const TRANSLATIONS = {
     about: 'Über',
     experience: 'Erfahrung',
     contact: 'Kontakt',
+    name: 'Name',
   },
 }
 
