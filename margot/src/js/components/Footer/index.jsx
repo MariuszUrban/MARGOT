@@ -4,10 +4,9 @@ import "../../../sass/_footer/_index.scss";
 import QuestionContainer from "../Footer/QuestionContainer";
 import Logotypes from "../Footer/Logotypes";
 import SocialMedia from "../Footer/SocialMedia";
-import Form from '../Footer/Form'
+import FormContainer from '../Footer/FormContainer'
 
 export default function Footer({ indexState }) {
-  console.log("footer props", indexState);
   return (
     <div className="footerWrap col-lg-12">
       {!indexState && (
@@ -29,7 +28,7 @@ export default function Footer({ indexState }) {
       {indexState && 
     
      ( <>
-       <Form />
+       <FormContainer />
      </>)}
     </div>
   );
