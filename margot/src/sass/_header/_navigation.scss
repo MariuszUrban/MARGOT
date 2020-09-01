@@ -15,8 +15,18 @@
     li{
         @include font-size(0.9);
         width: fit-content;
-        text-decoration: none;
         text-align: center;
         margin-right: 5px;
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+   
+}
+
+.active{
+    span{
+        color: red;
     }
 }

@@ -9,10 +9,10 @@ export default function Navigation() {
     return (
         <div className='navWrap'>
             <ul className="navListWrap"> 
-                <li><Link exact to='/' ><TranslationContainer translationKey='main' /></Link></li>
-                <li><Link to='/about'><TranslationContainer translationKey='about' /></Link></li>
-                <li><Link to='/experience'><TranslationContainer translationKey='experience' /></Link></li>
-                <li><Link to='/contact'><TranslationContainer translationKey='contact' /></Link></li>
+                <li activeClassName='active'><Link exact to='/' ><TranslationContainer translationKey='main' /></Link></li>
+                <li activeClassName='active'><Link to='/about'><TranslationContainer translationKey='about' /></Link></li>
+                <li activeClassName='active'><Link to='/experience'><TranslationContainer translationKey='experience' /></Link></li>
+                <li activeClassName='active'><Link to='/contact'><TranslationContainer translationKey='contact' /></Link></li>
             </ul>
         </div>
     )
