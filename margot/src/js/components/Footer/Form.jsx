@@ -5,7 +5,6 @@ import emailjs from "emailjs-com";
 export default class Form extends Component {
   handleClick = (e) => {
     e.preventDefault();
-    console.log("clickam form", this.props);
     this.props.hideForm();
   };
 
@@ -20,12 +19,12 @@ export default class Form extends Component {
       )
       .then(
         (result) => {
-          console.log("wyloguj result", result);
+          console.log("result", result);
         },
         (error) => {
-          console.log("wyloguj error", error);
+          console.log("error", error);
         }
-      );
+      );   
   };
 
   render() {

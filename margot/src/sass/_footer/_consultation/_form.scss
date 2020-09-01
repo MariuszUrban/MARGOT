@@ -51,6 +51,7 @@
         border-bottom: 1px solid black;        
         outline: none;
     }
+   
 }
 
 .inputWrap{ 
@@ -63,6 +64,12 @@ label{
 input{
   width: 70%;
   height: 15px;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px   $greyBlueGreen inset !important;
 }
 }
 .formButton{
@@ -91,7 +98,6 @@ input{
 
 .talkButton:hover{
     border: 0.25px solid black;
-    border-radius: 25px;
     letter-spacing: 0;
 }
 
