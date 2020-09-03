@@ -1,0 +1,67 @@
+@import '../utils/all';
+
+.contactWrap{
+    height: 100%;
+    background-color: $greyBlueGreen;
+
+}
+
+.space{
+    min-width: 45px;
+    height: 100%;
+}
+
+.contactWrapHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 20%;
+    h1, span{
+        @include font-size(1.15);
+        font-family: $font;
+        text-align: center; 
+        font-weight: 300;
+        letter-spacing: 1.5px;
+    }
+}
+
+.contactWrapForm{
+    display: flex;
+    height: fit-content;
+}
+
+.inputs{
+    display: flex;
+    @include font-size(0.9);
+    label{
+    width: 30%;
+    text-align: left;
+    
+    }
+    input{
+    width: 70%;
+    height: 15px;
+    border: none;
+    background-color: $greyBlueGreen;
+    border-bottom: 1px solid black;        
+    outline: none;
+    }
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover, 
+    input:-webkit-autofill:focus, 
+    input:-webkit-autofill:active  {
+        -webkit-box-shadow: 0 0 0 30px   $greyBlueGreen inset !important;
+}
+}
+
+.contactIMG{
+    height: inherit;
+    img{
+        max-height: 500px;
+    }
+}
+
+.contactFormMSG{
+    height: inherit;
+}

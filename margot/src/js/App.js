@@ -4,6 +4,7 @@ import Header from "./components/Header/index";
 import Footer from "./components/Footer/indexContainer";
 import Main from '../js/components/Main/index';
 import About from '../js/components/About/index';
+import Contact from '../js/components/Contact/index';
 import "../sass/_app.scss";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
             <Switch>
               <Route exact path="/" component={Main} />
               <Route class path="/about" component={About} />
+              <Route class path="/contact" component={Contact} />
             </Switch>
       </section>
       <section id='footer'>
