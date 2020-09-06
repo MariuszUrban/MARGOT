@@ -1,5 +1,5 @@
 import "../../../sass/_contact/_index.scss";
-import MessageForm from './MessageForm'
+import MailForm from './MailForm'
 import React, { Component } from "react";
 
 export default class index extends Component {
@@ -20,7 +20,7 @@ export default class index extends Component {
               alt="question-small"
             />
           </div>
-           <MessageForm /> 
+           <MailForm /> 
           <div className="space col-lg-1"></div>
         </div>
       </div>

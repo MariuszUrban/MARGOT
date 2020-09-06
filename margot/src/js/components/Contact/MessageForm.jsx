@@ -3,6 +3,8 @@ import emailjs from "emailjs-com";
 import '../../../sass/_contact/_messageForm.scss'
 
 export default class MessageForm extends Component {
+
+  
     sendMail = (e) => {
         e.preventDefault();
         emailjs
