@@ -1,4 +1,4 @@
-import "../../../sass/_footer/_consultation/_form.scss";
+import '../../../sass/_footer/_form.scss';
 import React, { Component } from "react";
 import emailjs from "emailjs-com";
 
