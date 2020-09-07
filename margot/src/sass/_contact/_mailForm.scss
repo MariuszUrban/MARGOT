@@ -1,0 +1,113 @@
+@import '../../sass/utils/all';
+
+.contactFormMSG{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .msg-flex{
+        height: 70%;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    
+    .inputs{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        @include font-size(0.9);
+        height: 15%;
+    }
+    
+    .single{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        height: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .label{
+        width: 25%;
+        text-align: left;
+    }
+    
+    .input{
+        width: 100%;
+        height: 15px;
+        input{
+            width: 100%;
+            border: none;
+            background-color: $greyBlueGreen;
+            border-bottom: 1px solid black;  
+            outline: none;
+        }
+        }
+    
+    .message{
+        height: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .messageTitle{
+        @include font-size(0.9);
+        height: 10%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .messageInput{
+        width: 100%;
+        height: 70%;
+        display: flex;
+        justify-content: center;
+        textarea{
+            width: 85%;
+            height: 100%;
+            border: 1 solid black;
+            background-color: $greyBlueGreenDarker;
+            outline: none;
+            text-align: left;
+            display: flex;
+            justify-content: flex-start;
+            
+        }
+    }
+    
+    .messageBTN{
+        height: 20% ;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button{
+            height: 60%;
+            @include font-size(0.9);
+            font-weight: 400;
+            background-color: $greyBlueGreen;
+            border: 1px solid transparent;
+            width: 160px;
+            justify-content: center;
+            align-content: center;
+            outline: none;
+            cursor: pointer;
+            transition: 0.7s;
+            letter-spacing: 1.5px;
+        }
+        button:hover{
+            border: 0.25px solid black;
+            letter-spacing: 0;
+        }
+    }
+    

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Form, Field } from "react-final-form";
+import "../../../sass/_contact/_mailForm.scss";
 
 export default class MailForm extends Component {
   render() {
@@ -11,57 +12,77 @@ export default class MailForm extends Component {
     };
 
     return (
-      <div>
+      <div className="contactFormMSG  col-lg-4">
         <Form
+          id="msg-form"
+          className="msg-flex"
           onSubmit={onSubmit}
           validate={(values) => {
             const errors = {};
             if (!values.name) {
-              errors.name = "Required";
+              errors.name = "Pole wymagane";
             }
             if (!values.email) {
-              errors.email = "Required";
+              errors.email = "Pole wymagane";
             }
             if (!values.message) {
-              errors.message = "Required";
-            } 
+              errors.message = "Pole wymagane";
+            }
             return errors;
           }}
           render={({ handleSubmit, form, submitting, pristine, values }) => (
-            <form onSubmit={handleSubmit}>
-              <Field name="name">
-                {({ input, meta }) => (
-                  <div>
-                    <label>Imię</label>
-                    <input {...input} type="text" />
-                    {meta.error && meta.touched && <span>{meta.error}</span>}
-                  </div>
-                )}
-              </Field>
-              <Field name="email">
-                {({ input, meta }) => (
-                  <div>
-                    <label>E-Mail</label>
-                    <input {...input} type="email" />
-                    {meta.error && meta.touched && <span>{meta.error}</span>}
-                  </div>
-                )}
-              </Field>
+            <form id="msg-form" className="msg-flex" onSubmit={handleSubmit}>
+              <div className="inputs">
+                <Field name="name">
+                  {({ input, meta }) => (
+                    <div className="single">
+                      <div className="label">
+                        <label>Imię</label>
+                      </div>
+
+                      <div className="input">
+                        <input {...input} type="text" />
+                      </div>
+
+                      {meta.error && meta.touched && <span>{meta.error}</span>}
+                    </div>
+                  )}
+                </Field>
+
+                <Field name="email">
+                  {({ input, meta }) => (
+                    <div className="single">
+                      <div className="label">
+                        <label>E-mail</label>
+                      </div>
+                      <div className="input">
+                        <input {...input} type="email" />
+                      </div>
+                      {meta.error && meta.touched && <span>{meta.error}</span>}
+                    </div>
+                  )}
+                </Field>
+              </div>
+
               <Field name="message">
                 {({ input, meta }) => (
-                  <div>
-                    <label>Wiadomość</label>
-                    <textarea {...input} type="text"  />
+                  <div className="message">
+                    <div className="messageTitle">
+                      <label>Wiadomość</label>
+                    </div>
+                    <div className="messageInput">
+                      <textarea {...input} type="text" />
+                    </div>
+
                     {meta.error && meta.touched && <span>{meta.error}</span>}
                   </div>
                 )}
               </Field>
-              <div className="buttons">
-                <button type="submit" disabled={submitting}>
+              <div className="messageBTN">
+                <button type="submit" disabled={submitting} form="msg-form">
                   Wyślij !
                 </button>
               </div>
-              
             </form>
           )}
         />
