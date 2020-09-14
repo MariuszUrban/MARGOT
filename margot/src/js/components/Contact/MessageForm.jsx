@@ -3,8 +3,8 @@ import emailjs from "emailjs-com";
 import "../../../sass/_contact/_messageForm.scss";
 
 export default class MessageForm extends Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = {
       name: "",
       email: "",
@@ -12,11 +12,8 @@ export default class MessageForm extends Component {
     };
   }
 
-  
-
   changeHandler = (event) => {
     this.setState({ [event.target.id]: event.target.value });
-    console.log(" a co to", this.state);
   };
 
   sendMail = (e) => {
@@ -49,20 +46,21 @@ export default class MessageForm extends Component {
               </div>
               <div className="input">
                 <input
+                  id='name'
                   name="name"
                   minLength="3"
-                  maxLength="20"
-                  onChange={this.changeHandler}
+                  maxLength="25"
                 />
               </div>
-              
             </div>
             <div className="single">
               <div className="label">
                 <label>E-mail</label>
               </div>
               <div className="input">
-                <input onChangeText={this.validate} type="email" name="email" />
+                <input  
+                id='email'
+                type="email" name="email" />
               </div>
             </div>
           </div>
@@ -71,10 +69,14 @@ export default class MessageForm extends Component {
               <label>Wiadomość</label>
             </div>
             <div className="messageInput">
-              <textarea name="message" />
+              <textarea 
+              id='message'
+              minLength='20'
+              onChange={this.changeHandler}
+              name="message" />
             </div>
             <div className="messageBTN">
-              <button type="submit" form="msg-form">
+              <button  type="submit" form="msg-form">
                 Wyślij !
               </button>
             </div>

@@ -1,6 +1,6 @@
 import "../../../sass/_contact/_index.scss";
 // import MailForm from './MailForm';
-import MessageForm from './MessageForm'
+import MessageForm from '../Contact/MessageForm'
 import React, { Component } from "react";
 
 export default class index extends Component {
