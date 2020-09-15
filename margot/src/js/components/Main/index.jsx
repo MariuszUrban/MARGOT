@@ -17,13 +17,13 @@ export default function index() {
             </div>
            
             <div className='roww DescTitle'>
-                <span>
+                <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa
                 nostrum quis voluptatibus maxime iste voluptates, consequatur
                 consectetur et delectus nulla consequuntur iure eius, doloremque
                 eligendi! Laborum ipsam laboriosam nulla maxime? Suscipit itaque
                 voluptates nemo voluptate fuga similique voluptatibus ad eligendi.
-                </span>
+                </p>
           </div>
 
         <div className='roww buttonMore'>
