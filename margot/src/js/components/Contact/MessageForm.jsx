@@ -12,8 +12,6 @@ export default class MessageForm extends Component {
     };
   }
 
-  
-
   changeHandler = (event) => {
     this.setState({ [event.target.id]: event.target.value });
     console.log(" a co to", this.state);
