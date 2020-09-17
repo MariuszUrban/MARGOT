@@ -1,0 +1,39 @@
+@import '../utils/all';
+
+.carousel{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-indicators{
+    margin-bottom: 0;
+
+}
+
+.carousel-inner{
+     width: 70%
+}
+
+.carousel-item{
+    width: 100%;
+}
+
+.opinion{
+    width: 100%;
+    .content{
+        @include font-size(0.5);
+        font-style: italic;
+        text-align: center;
+        line-height:10px;
+        justify-content: center;
+    }
+    .author{
+        justify-content: flex-end;
+        @include font-size(0.45);
+        margin-top: 10px;
+    }
+} 

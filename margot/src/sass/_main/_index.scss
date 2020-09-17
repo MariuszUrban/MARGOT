@@ -22,7 +22,7 @@
 .mainWrapHeader{
     height: 100%;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     display: flex;
     flex-direction: column;
 }
@@ -30,7 +30,7 @@
 .HeaderTitle{
     width: 100%;
     height: fit-content;
-    @include font-size(0.9);
+    @include font-size(0.75);
     letter-spacing: 1.2px;
     justify-content: flex-start;
     display: flex;
